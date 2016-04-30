@@ -1,0 +1,47 @@
+{
+  "name": "NavExercise",
+  "description": "Exercise for candidates to complete where they will build a responsive nav driven from json",
+  "version": "0.1.0",
+  "authors": [
+    "Jason Divock <jdivock@hugeinc.com>",
+    "Dave Furfero <dfurfero@hugeinc.com>",
+    "Wes Hatch <whatch@hugeinc.com>",
+    "Karl Stanton <kstanton@hugeinc.com>"
+  ],
+  "license": "© 2014 Huge. All Rights Reserved.",
+  "homepage": "https://github.com/hugeinc/NavExercise",
+  "bugs": {
+    "url": "https://github.com/hugeinc/NavExercise/issues"
+  },
+  "private": true,
+  "scripts": {
+    "test": "mocha --reporter spec test/test.js",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "morgan": "~1.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "chai": "^3.5.0",
+    "chromedriver": "^2.21.2",
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nightwatch": "^0.2.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "mocha": "^2.3.4",
+    "nightwatch": "^0.8.3",
+    "phantomjs": "^2.1.7",
+    "request": "^2.72.0",
+    "selenium-server-standalone-jar": "2.47.1",
+    "sinon": "^1.17.3",
+    "superagent": "^1.4.0"
+  }
+}

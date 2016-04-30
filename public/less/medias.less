@@ -1,0 +1,266 @@
+@media screen and (min-width: 900px) and (max-width: 990px) {
+	header {
+		nav{
+			.nav-item {
+				a {
+					padding: 24px 18px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 899px) {
+	header {
+
+		h1 {
+			float: left;
+			padding: 16px 0 16px 16px;
+			margin: 0 48px 0 0;
+
+			img {
+				width: 46px;
+				float: left;
+			}
+		}
+
+		nav{
+			.nav-item {
+				a {
+					padding: 16px;
+					.first-level-desktop-2
+				}
+			}
+
+			.sub-nav-item {
+				top: 50px;
+
+				a {
+					.second-level-desktop-2
+				}
+			}
+		}
+	}
+
+	.content-wrapper {
+		section {
+
+			.banner {
+				min-height: 480px;
+			}
+
+			.headline {
+				h2 {
+					.headline-desktop-2
+				}
+			}
+		}
+
+		.text-wrapper {
+			margin-top: 30px;
+
+			p {
+				.bodytext-desktop-2
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	header {
+		height: 60px;
+
+		.menu-wrapper {
+			z-index: 30;
+			float: left;
+			width: 100%;
+			height: 60px;
+			position: relative;
+			background-color: @huge-magenta;
+		}
+
+		&.open-mobile {
+			nav {
+				left: 0;
+			}
+
+			h1{
+				left: 0;
+			}
+
+			.menu-mobile {
+				left: 100%;
+				-webkit-transform: translate(-72px, 0px);
+				-moz-transform: translate(-72px, 0px);
+				transform: translate(-72px, 0px);
+			}
+		}
+
+		h1 {
+			position: absolute;
+			left: -80px;
+			padding: 20px 0 20px 24px;
+			transition: 0.5s;
+
+			img {
+				width: 50px;
+			}
+		}
+
+		.menu-mobile {
+			background-image: url('../images/toggle-open.svg');
+			background-position: center; 
+			background-size: cover;
+			position: absolute;
+			left: 0px;
+			display: block;
+			width: 72px;
+			height: 60px;
+			transition: 1s;
+			-webkit-appearance: none;
+			background-color: @huge-magenta;
+			border: none;
+
+			&.close {
+				background-image: url('../images/toggle-close.svg');
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		nav {
+			position: absolute;
+			top: 60px;
+			left: -280px;
+			background-color: @white;
+			z-index: 20;
+			height: 100vh;
+			transition: 0.5s;
+			-webkit-transform: translate(0, -60px);
+			-moz-transform: translate(0, -60px);
+			transform: translate(0, -60px);
+
+			.mobile-copyright {
+				display: block;
+			}
+
+			span {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 18px 24px;
+				.copyright-mobile
+			}
+
+			ul {
+				padding: 72px 0;
+				float: left;
+				width: 280px;
+				
+				.nav-item {
+					float: left;
+					width: 100%;
+
+					&.sub-menu {
+						&.open:after {
+							-webkit-transform: rotate(-135deg);
+							-moz-transform: rotate(-135deg);
+							transform: rotate(-135deg);
+							top: 20px;
+						}
+
+						&:after {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 14px;
+							right: 15px;
+							width: 10px;
+							height: 10px;
+							border-bottom: 3px solid @huge-magenta;
+							border-right: 3px solid @huge-magenta;
+							-webkit-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							transform: rotate(45deg);
+							transition: 0.5s;
+						}
+					}
+
+					&:hover {
+						color: @black;
+					}
+
+					a {
+						padding: 15px 24px;
+					}
+
+					.first-level {
+						color: @black;
+						width: 100%;
+						position: relative;
+
+						&:hover {
+							background-color: @light-gray;
+							color: @huge-magenta !important;
+						}
+					}
+
+					.sub-nav-item {
+						position: relative;
+						display: none;
+						top: 0;
+						padding: 0;
+
+						&.display {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.content-wrapper {
+
+		.text-wrapper {
+			margin-top: 0;
+
+			p {
+				.body-text-mobile
+			}
+		}
+
+		#bg-screen {
+			display: none !important;
+		}
+
+		section {
+			.headline {
+				position: relative;
+				top: 0;
+				left: 0;
+				-webkit-transform: none;
+				-moz-transform: none;
+				transform: none;
+
+				h2 {
+					float: left;
+					margin: 50px 0;
+					.headline-mobile !important
+				}
+			}
+		}
+
+		.banner-area {
+			.banner {
+				min-height: 240px;
+				overflow: hidden;
+				background: url(../images/background-image.jpg) center;
+				background-size: cover;
+			}
+		}
+	}
+}
