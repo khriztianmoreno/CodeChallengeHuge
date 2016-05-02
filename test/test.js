@@ -42,7 +42,7 @@ describe("Main Menu Module", function () {
             this.requests[0].respond(200,
                 {"Content-Type": "application/json"},
                 '{"id": 1, "name": "foo"}');
-            sinon.assert.calledWith(callback, {"id": 1, "name": "foo"});
+            sinon.assert.calledWith(callback, {"label": "Work"});
         });
     });
 

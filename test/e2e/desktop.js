@@ -13,7 +13,7 @@ module.exports = {
         browser
             .url('http://localhost:3000')
             .click('a[title="Events"]')
-            .assert.urlContains('events', 'URL Changed successfully')
+            .assert.urlContains('events', 'URL Changed ok')
             .pause(1000)
             .end();
     },
@@ -23,7 +23,7 @@ module.exports = {
             .url('http://localhost:3000')
             .click('a[title="About"]')
             .click('a[title="What we do"]')
-            .assert.urlContains('what-we-do', 'URL Changed successfully')
+            .assert.urlContains('what-we-do', 'URL Changed ok')
             .pause(1000)
             .end();
     },
