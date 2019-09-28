@@ -37,7 +37,7 @@
     "gulp-sourcemaps": "1.12.1",
     "gulp-uglify": "1.5.4",
     "mocha": "2.5.3",
-    "nightwatch": "0.8.18",
+    "nightwatch": "0.9.21",
     "phantomjs": "2.1.7",
     "request": "2.88.0",
     "selenium-server-standalone-jar": "2.47.1",
